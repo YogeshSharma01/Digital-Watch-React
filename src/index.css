@@ -12,16 +12,17 @@ body{
   margin-left: 30%;
   border-style: groove;
   box-shadow: 5px 10px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 .main-text{
   margin: 0;
-  margin-left: 22%;
-  margin-top: 26%;
   font-size: 37px;
 }
 h1{
   margin: 0;
-  padding-left: 28%;
   /* padding-top: 40%; */
   font-size: 76px;
   text-shadow: 2px 2px #FF0000;
@@ -31,4 +32,32 @@ h1{
 }
 .spch{
   font-size: 40px;
+}
+/* Media query for Laptop and Desktop */
+
+
+/* Media query for Tablet and iPads */
+@media (max-width: 480px){
+  #root{
+    margin-left: 20%;
+  }
+}
+
+/* Media query for Mobile Phones */
+
+@media (max-width: 480px){
+  #root{
+    height: 280px;
+    border-radius: 50%;
+    width: 282px;
+    margin-top: 55%;
+    margin-left: 16%
+  }
+  .main-text{
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+  h1{
+    font-size: 45px;
+  }
 }
